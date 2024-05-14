@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #0A0A0A;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.header{
+    background-color: #0A0A0A;
+    padding: 33px 0 32px;
+    color: #717171;
+}
+.coutneiner{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;   
+}
+.nav{
+    margin-right: 170px;
+}
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.menu{
+    display: flex;
+}
+.menu__item + .menu__item{
+    padding-left: 30px;
+}
+.phone{
+    margin-left: 345px;
+}
+.menu__link,
+.phone{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    opacity: 0.8;
+    transition: all .3s;
+    cursor: pointer;
+}
+.menu__link:hover,.phone:hover{
+    color: white;
+    opacity: 1;
+    transform: scale(1.2);
+}
+.menu__item{
+    transition: all .3s;
+}
+.menu__item:hover{
+    transform: scale(1.2);
+}
+.logo{
+    transition: all .3s;
+    cursor: pointer;
+    
+}
+.logo:hover{
+    transform: scale(1.5); 
+}
+
+.headline{
+    background-color: #F5F5F7;
+    text-align: center;
+    padding: 70px 0 40px;
+}
+.title{
+    text-transform: uppercase;
+    color: #490E84;
+    margin: 0 0 40px;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
+}
+.headline-img{
+    margin-bottom: 25px;
+}
+.headline-btn{
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #490E84;
+    padding: 22px 117px 19px;
+    border-radius: 30px;
+    transition: all .3s;
+}
+.headline-btn:hover{
+    transform: scale(1.2);
+}
+.new{
+    padding: 90px 0 150px;
+}
+.news-tittle{
+    margin: 0 0 50px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: 700;
+    color: #717171;
+}
+.dsr{
+    display: flex;
+    align-items: center;
+}
+.news__text p{
+    max-width:560px;
+}
+.items__content + .items__content{
+    margin-bottom: 30px;
+}
+.news__text b{
+    max-width: 560px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 130%;
+}
+.img__new{
+    margin-left: 191px;
+}
+.color{
+    padding-bottom: 150px;
+}
+.color__items{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.color__title{
+    text-align: center;
+    margin: 0 0 50px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: 700;
+    color: #717171;
+}
+.color__items img{
+    padding-bottom: 30px;
+    transition: all .3s;
+}
+.color__items img:hover{
+    transform: scale(1.2);
+}
+.color__items h3{
+    font-size: 20px;
+    line-height: 26px;
+    margin:0 0 10px;
+}
+.color__items p{
+    margin: 0;
+    font-size: 14px;
+}
+.contacts__inner{
+    display: flex;
+    background-color: #574B63;
+    color: white;
+}
+.contacts-form{
+    width: 100%;
+    padding: 140px 93px;
+    text-align: center;
+}
+.contacts-title{
+    margin: 0 0 60px;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    text-align: left;
+}
+.contacts-input{
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid white;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #574B63;
+    outline: none;
+    color: white;
+
+}
+.contacts-input::placeholder{
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    opacity: 0.5;
+    font-family: 'Inter';
+}
+.contacts-form p{
+    margin: 30px 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+    opacity: 0.5;
+    text-align: center;
+}
+.contacts-form button{
+    border: none;
+    text-transform: uppercase;
+    color: #490E84;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 16px 81px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 130%;
+    cursor: pointer;
+    transition: all .9s;
+ 
+}
+.contacts-form button:hover{
+    background-color: #FF4040;
+    color:black;
+}
+.footer{
+    background-color: #0A0A0A;
+
+}
+.footer__inner{
+    color: #717171;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+.footer__link{
+    margin-right: 300px;
+    transition: all .4s;
+}
+.footer__link:hover{
+    color: white;
+    transform: scale(1.2);
+}
