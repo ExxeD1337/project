@@ -1,212 +1,244 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROBO SCHOOL</title>
+    <title>ART Школа</title>
     <link rel="stylesheet" href="style/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
+
 <body>
     <div class="wrapper">
         <header class="header">
             <div class="conteiner__header">
                 <nav class="nav">
-                    <a class="logo" href="#">ROBO.SCHOOL</a>
+                    <div>
+                        <a href=""><img class="logo__img" src="img/Лого.svg" alt=""></a>
+                        <a class="logo" href="#">ART.Школа</a>
+                    </div>
                     <ul class="menu__list">
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">О школе</a>
+                            <!-- <a class="menu__list-link" href="#">О школе</a> -->
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    О школе
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">История</a></li>
+                                    <li><a class="dropdown-item" href="#">Галерея</a></li>
+                                    <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">Тренеры</a>
+                            <a class="menu__list-link" href="Page/staff.html">Преподаватели</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">Стоимость</a>
+                            <a class="menu__list-link" href="Page/course.html">Курсы</a>
                         </li>
                     </ul>
                     <a class="phone" href="#">+7 800 000 11 22</a>
                 </nav>
             </div>
         </header>
-    <main class="main">
+        <main class="main">
 
 
-        <section class="top">
-            <div class="top__inner">
-                <div class="top__dcr">
-                    <h1 class="top__title">
-                        ROBO SCHOOL
-                    </h1>
-                    <p class="top__text">
-                        Курсы повышения квалификации по робототехнике для педагогов начальной школы
-                    </p>
-                    <a class="top__btn" href="">Записаться на курс</a>
+            <section class="top">
+                <div class="top__inner">
+                    <div class="top__dcr">
+                        <h1 class="top__title">
+                            ART.Школа
+                        </h1>
+                        <p class="top__text">
+                            Профессиональная художественная школа раскроет ваши таланты
+                        </p>
+                        <a class="top__btn" href="">Записаться в школу</a>
+                    </div>
+                    <img class="top__img" src="img/Fon.svg" alt="">
                 </div>
-                <img class="top__img" src="img/Group 211.png" alt="">
-            </div>
-            
-        </section>
-        <section class="page__info">
-            <div class="conteiner">
-                <div class="page__info-inner">
-                    <p class="page__info-text">Robo School – <b>учреждение для формирования кадрового педагогического резерва в сфере робототехники и программирования</b></p>
-                    <div class="page__info-card">
-                        <ul class="page__info-list">
-                            <li class="page__info-item">
-                                <p class="page__info-number">10</p>
-                                <p class="page__info-dsr">УМК по различным направлениям по робототехнике</p>
-                            </li>
-                            <li class="page__info-item">
-                                <p class="page__info-number">20</p>
-                                <p class="page__info-dsr">Школ, в которых запущена робототехника</p>
-                            </li>
-                            <li class="page__info-item">
-                                <p class="page__info-number">100</p>
-                                <p class="page__info-dsr">Педагогов прошедших курсы повышения квалификации</p>
-                            </li>
-                            <li class="page__info-item">
-                                <p class="page__info-number">10 000</p>
-                                <p class="page__info-dsr">Обученных детей на базе собственных центров</p>
-                            </li>
-                        </ul>
+
+            </section>
+            <section class="page__info">
+                <div class="conteiner">
+                    <div class="page__info-inner">
+                        <p class="page__info-text">ART.Школа – <b>Творческая студия является идеальным местом для людей,
+                                желающих раскрыть свой потенциал, научиться новым навыкам и встретить единомышленников.
+                                Она
+                                создает условия для развития творческого мышления, фантазии и вдохновения, а также
+                                помогает
+                                укрепить самооценку и расширить кругозор </b></p>
+                        <div class="page__info-card">
+                            <ul class="page__info-list">
+                                <li class="page__info-item">
+                                    <p class="page__info-number">5</p>
+                                    <p class="page__info-dsr">Лет обучения людей</p>
+                                </li>
+                                <li class="page__info-item">
+                                    <p class="page__info-number">20</p>
+                                    <p class="page__info-dsr">Образовательных курсов</p>
+                                </li>
+                                <li class="page__info-item">
+                                    <p class="page__info-number">1000</p>
+                                    <p class="page__info-dsr">Выпусников</p>
+                                </li>
+                                <li class="page__info-item">
+                                    <p class="page__info-number">50</p>
+                                    <p class="page__info-dsr">Педагогов прошедших курсы повышения квалификации</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="course">
+            <section class="course__main">
                 <div class="conteiner">
-                    <div class="course__inner">
-                        <h3 class="course-title">Что вы получите после курса</h3>
+                    <div class="course__inner-main">
+                        <h3 class="course-title__main">Почему мы</h3>
                         <ul class="course-list">
                             <li class="course-list-item">
-                                <h4 class="course-list-item-title">Удостоверение</h4>
-                                <p class="course-list-item-text">Дающее право преподавать робототехнику для детей 6-12 лет в образовательных учреждениях</p>
+                                <h4 class="course-list-item-title">Индивидуальная программа</h4>
+                                <p class="course-list-item-text">На любом этапе курса вы можете присоединиться к группе.
+                                    Наши занятия проходят по индивидуальной программе. Удобное расписание для каждого
+                                    клиента. Только у нас 1 занятие в курсе - 2,5 часа!</p>
                             </li>
                             <li class="course-list-item">
-                                <h4 class="course-list-item-title">Знания</h4>
-                                <p class="course-list-item-text">По основам разработки учебно-методических комплексов по робототехнике и программированию</p>
+                                <h4 class="course-list-item-title">Мини группы</h4>
+                                <p class="course-list-item-text">Группы от 3-х до 6-ти человек. Несколько групп по
+                                    каждому курсу в зависимости от уровня подготовки. Отдельно занимаюся детские и
+                                    взрослые группы.</p>
                             </li>
                             <li class="course-list-item">
-                                <h4 class="course-list-item-title">Практику</h4>
-                                <p class="course-list-item-text">Возможность пройти практику по преподаванию робототехники на базе R:ED LAB (в оффлайн или онлайн формате)</p>
+                                <h4 class="course-list-item-title">Уютная атмосфера</h4>
+                                <p class="course-list-item-text">Занятия проходят в историческом особняке 19 века,
+                                    в просторных и светлых залах. На занятиях Вы сочетаете приятный досуг с
+                                    получением полезных навыков и знаний.</p>
                             </li>
                         </ul>
                     </div>
                 </div>
-        </section>
-        <section class="coach">
-            <div class="conteiner">
-                <div class="coach__inner">
-                    <h3 class="coach__text">Профессиональные тренеры</h3>
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img class="coach__img" src="img/logo1.jpeg" alt="">
-                            <h4 class="coach_title">Ирина Лайм</h4>
-                            <p class="coach__info">преподаватель по робототехнике</p>
-                            <p class="coach__link">Подробнее</p>
-                          </div>
-                          <div class="swiper-slide">
-                            <img class="coach__img" src="img/logo2.jpeg" alt="">
-                            <h4 class="coach_title">Ирина Лайм</h4>
-                            <p class="coach__info">преподаватель по робототехнике</p>
-                            <p class="coach__link">Подробнее</p>
-                          </div>
-                          <div class="swiper-slide">
-                            <img class="coach__img" src="img/logo3.jpeg" alt="">
-                            <h4 class="coach_title">Ирина Лайм</h4>
-                            <p class="coach__info">преподаватель по робототехнике</p>
-                            <p class="coach__link">Подробнее</p>
-                          </div>
-                          <div class="swiper-slide">
-                            <img class="coach__img" src="img/logo4.jpeg" alt="">
-                            <h4 class="coach_title">Ирина Лайм</h4>
-                            <p class="coach__info">преподаватель по робототехнике</p>
-                            <p class="coach__link">Подробнее</p>
-                          </div>
-                          <div class="swiper-slide">
-                            <img class="coach__img" src="img/logo5.jpeg" alt="">
-                            <h4 class="coach_title">Ирина Лайм</h4>
-                            <p class="coach__info">преподаватель по робототехнике</p>
-                            <p class="coach__link">Подробнее</p>
-                          </div>
-                        </div>
-                        <!-- <div class="swiper-button-next"></div> -->
-                        <!-- <div class="swiper-button-prev">   </div> -->
-                        <div class="swiper-pagination"></div>
-                      </div>
-                </div>
-            </div>
-        </section>
-        <section class="package">
-            <div class="conteiner">
-                <div class="package__inner">
-                    <h3 class="package__title">Выберите нужный пакет</h3>
-
-                    <div class="package__card">
-
-                        <div class="card">
-                           <div class="card__inner">
-                                <h4 class="card__title">– PRO –</h4>
-                                <p class="card__price">20.000 ₽</p>
-                                <p class="card__description">УМК по робототетхнике и программированию</p>
-                                <a class="card__link" href="">Оставить заявку</a>
-                           </div>   
-                        </div>
-
-                        <div class="card">
-                            <div class="card__inner">
-                                <h4 class="card__title">– ROBO –</h4>
-                                <p class="card__price">15.000 ₽</p>
-                                <p class="card__description">УМК по робототетхнике</p>
-                                <a class="card__link" href="">Оставить заявку</a>
+            </section>
+            <section class="coach">
+                <div class="conteiner">
+                    <div class="coach__inner">
+                        <h3 class="coach__text">Профессиональные тренеры</h3>
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="coach__img" src="img/logo1.jpeg" alt="">
+                                    <h4 class="coach_title">Ирина Лайм</h4>
+                                    <p class="coach__info">Академический рисунок и живопись</p>
+                                    <p class="coach__link">Подробнее</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="coach__img" src="img/logo2.jpeg" alt="">
+                                    <h4 class="coach_title">Спирина Мария</h4>
+                                    <p class="coach__info">Академический рисунок, живопись, батик</p>
+                                    <p class="coach__link">Подробнее</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="coach__img" src="img/logo3.jpeg" alt="">
+                                    <h4 class="coach_title">Игорь Леонов</h4>
+                                    <p class="coach__info">Преподаватель по мультипликации</p>
+                                    <p class="coach__link">Подробнее</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="coach__img" src="img/logo4.jpeg" alt="">
+                                    <h4 class="coach_title">Даниил Федин</h4>
+                                    <p class="coach__info">Академический рисунок</p>
+                                    <p class="coach__link">Подробнее</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="coach__img" src="img/logo5.jpeg" alt="">
+                                    <h4 class="coach_title">Юлия Волкова</h4>
+                                    <p class="coach__info">Рисунок, живопись, мастер-кукольник</p>
+                                    <p class="coach__link">Подробнее</p>
+                                </div>
                             </div>
+                            <!-- <div class="swiper-button-next"></div> -->
+                            <!-- <div class="swiper-button-prev">   </div> -->
+                            <div id="swp" class="swiper-pagination"></div>
                         </div>
-
-                        <div class="card"> 
-                            <div class="card__inner">
-                                <h4 class="card__title">– PROG –</h4>
-                                <p class="card__price">10.000 ₽</p>
-                                <p class="card__description">УМК по робототетхнике</p>
-                                <a class="card__link" href="">Оставить заявку</a>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="sale"> 
-            <div class="conteiner">
-                <div class="sale__inner">
-                    <div class="sale__advertising">
-                        <h4 class="sale__advertising-title" >Запишитесь на курс со скидкой 10%</h4>
-                        <p class="sale__advertising-text">Акция действительна до 10 марта 2022 года</p>
-                    </div>
-                    <form class="sale__form" action="#">
-                        <input class="sale__input" type="text" placeholder="Имя">
-                        <input class="sale__input" type="tel" placeholder="Телефон">
-                        <input class="sale__input" type="email" placeholder="E-mail">
-                        <button class="sale__btn">
-                            Оформить заявку
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </section>
+            </section>
+            <!-- <section class="package">
+                <div class="conteiner">
+                    <div class="package__inner">
+                        <h3 class="package__title">Выберите нужный пакет</h3>
 
-    </main>
+                        <div class="package__card">
+
+                            <div class="card">
+                                <div class="card__inner">
+                                    <h4 class="card__title">– PRO –</h4>
+                                    <p class="card__price">20.000 ₽</p>
+                                    <p class="card__description">УМК по робототетхнике и программированию</p>
+                                    <a class="card__link" href="">Оставить заявку</a>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card__inner">
+                                    <h4 class="card__title">– ROBO –</h4>
+                                    <p class="card__price">15.000 ₽</p>
+                                    <p class="card__description">УМК по робототетхнике</p>
+                                    <a class="card__link" href="">Оставить заявку</a>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card__inner">
+                                    <h4 class="card__title">– PROG –</h4>
+                                    <p class="card__price">10.000 ₽</p>
+                                    <p class="card__description">УМК по робототетхнике</p>
+                                    <a class="card__link" href="">Оставить заявку</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+            <section class="sale">
+                <div class="conteiner">
+                    <div class="sale__inner">
+                        <div class="sale__advertising">
+                            <h4 class="sale__advertising-title">Запишитесь на курс со скидкой 10%</h4>
+                            
+                        </div>
+                        <form class="sale__form" action="#">
+                            <input class="sale__input" type="text" placeholder="Имя">
+                            <input class="sale__input" type="tel" placeholder="Телефон">
+                            <input class="sale__input" type="email" placeholder="E-mail">
+                            <button class="sale__btn">
+                                Оформить заявку
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </main>
         <footer class="footer">
             <div class="conteiner__header">
                 <div class="footer__inner">
                     <div class="footer__logo">
-                        <a class="footer__logo-link" href="*">ROBO.SCHOOL</a>
-                        <p class="footer__logo-text">© ROBO.SCHOOL</p>
+                        <a class="footer__logo-link" href="#">ART.Школа</a>
+                        <p class="footer__logo-text">© ART.Школа</p>
                     </div>
                     <a class="footer__phone" href="#">+7 800 000 11 22</a>
                 </div>
@@ -214,6 +246,10 @@
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>

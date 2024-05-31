@@ -69,8 +69,17 @@ ul {
     line-height: 160%;
 }
 
+
 .menu__list-item:not(:last-child) {
     margin-right: 30px;
+}
+.menu__list-item{
+    opacity: 0.7;
+    transition: all .6s;
+}
+.menu__list-item:hover{
+    opacity: 1;
+    transform: scale(1.2);
 }
 
 .menu__list-link {
@@ -79,6 +88,7 @@ ul {
     font-weight: 300;
     line-height: 160%;
 }
+
 
 .phone {
     color: white;
@@ -98,6 +108,8 @@ ul {
 .top {
     background-color: #141024;
     margin-bottom: 120px;
+    padding-bottom: 50px;
+    overflow: hidden;
 }
 
 .top__inner {
@@ -136,14 +148,17 @@ ul {
 }
 
 .top__img {
-    padding-top: 93px;
-}
+    max-height: 500px;
+    padding-top: 100px;
+} 
 
 .page__info {
     margin-bottom: 91px;
 
 }
-
+.page__info-item{
+    text-align: center;
+}
 .page__info-text {
     max-width: 891px;
     font-size: 30px;
@@ -155,6 +170,7 @@ ul {
 .page__info-list {
     display: flex;
     gap: 40px;
+    justify-content: space-between;
 }
 
 .page__info-number {
@@ -171,7 +187,7 @@ ul {
     line-height: 160%;
 }
 
-.course {
+.course__main {
     background-color: #F9F9F9;
     margin-bottom: 120px;
 }
@@ -181,7 +197,7 @@ ul {
     gap: 40px;
 }
 
-.course-title {
+.course-title__main {
     color: #141024;
     font-size: 50px;
     font-weight: 250;
@@ -205,12 +221,13 @@ ul {
     line-height: 160%;
 }
 
-.course__inner {
+.course__inner-main{
     padding: 100px 0;
 }
 
 .coach {
     margin-bottom: 138px;
+    padding-bottom: 100px;
 }
 
 .coach__text {
@@ -242,10 +259,13 @@ ul {
 }
 
 .coach__link {
+    display: inline;
     font-size: 18px;
     font-weight: 400;
     line-height: 160%;
     color: #D52027;
+    cursor: pointer;
+    text-align: left;
 }
 
 .package {
@@ -410,4 +430,146 @@ ul {
     font-size: 30px;
     font-weight: 250;
     line-height: 160%;
+}
+.btn{
+    padding: 0;
+    margin: 0;
+    background-color: #141024;
+    border: none;
+    font-size: 20px;
+}
+.btn:hover{
+    border: none;
+    background-color: #141024;
+
+}
+.btn.show{
+    border: 0;
+    background-color: #141024;
+}
+.dropdown-menu.show{
+    background-color: #141024;
+}
+.dropdown-item{
+    opacity: 0.5;
+    color: #fff;
+    background-color: #141024;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: white;
+    background-color: #141024;
+    opacity: 1;
+}
+#swp{
+    top: 512px;
+}
+.staff__inner{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    padding: 50px 0 50px 0;
+    justify-items: center;
+    
+}
+.staff__card {
+    border-radius: 40px;
+    padding: 30px;
+    text-align: center;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.staff__dsr {
+    display: block;
+    margin-top: 40px;
+
+}
+.staff__name {
+    font-size: 18px;
+}
+.staff__text{
+    font-size: 16px;
+}
+.fa-solid{
+    font-size: 110px;
+}
+.staff__card:hover{
+    background-color: #141024;
+    color: white; 
+    transform: scale(1.1);
+}
+.staff__title{
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+.staff__title{
+    padding-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+.header__staff{
+    padding-bottom: 25px;
+}
+.main__course{
+    background-color: #141024;
+}
+.course__title{
+    text-align: center;
+    font-weight: 100;
+    color: white;
+    padding-top: 100px;
+}
+.course__inner{
+    padding: 0;
+}
+.course__menu{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.course{
+    background-color: #141024;
+}
+.course__item{
+    border: 1px solid white;
+    border-radius: 30px;
+    display: flex;
+    flex-basis: 500px;
+    transition: all .4s;
+    cursor: pointer;
+    align-items: center;    
+}
+.course__item:hover{
+    transform: scale(1.1);
+}
+
+.fa-solid-course{
+    padding:20px;
+    margin-left: 50px;
+    color: #fff;
+    font-size: 60px;
+}
+.course__dsr{
+    padding: 10px;
+    color: #fff;
+    max-width: 300px;
+}
+.course__btn{
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin-left: 35px;
+    transition: all .5s;
+}
+
+.course__btn:hover{
+    background-color: #D52027;
+    transform: scale(1.4);
 }
