@@ -7843,11 +7843,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\repo\\Лабы\\Лабораторная_6\\RazorPagesApp\\RazorPagesApp.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\Проекты\\веб\\RazorPagesApp\\RazorPagesApp.csproj",
       "projectName": "RazorPagesApp",
-      "projectPath": "C:\\Users\\User\\Desktop\\repo\\Лабы\\Лабораторная_6\\RazorPagesApp\\RazorPagesApp.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\Проекты\\веб\\RazorPagesApp\\RazorPagesApp.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\repo\\Лабы\\Лабораторная_6\\RazorPagesApp\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\Проекты\\веб\\RazorPagesApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
