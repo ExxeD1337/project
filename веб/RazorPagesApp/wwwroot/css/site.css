@@ -1,0 +1,44 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.title {
+    font-family: "Briem Hand";
+    color:blue;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+.card{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+}
+.card-item{
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    height:150px;
+    width:100px;
+    text-align:center;
+}

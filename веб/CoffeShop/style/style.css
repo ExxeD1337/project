@@ -1,0 +1,816 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    background-color: #14110E;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    min-height: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    max-width: 1255px;
+    padding: 0 75px;
+    margin: 0 auto;
+}
+
+/* --------------------Header------------- */
+.header {
+    background-color: #1C1814;
+    overflow: hidden;
+}
+
+.container-header {
+    max-width: 1345px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+}
+
+.nav__menu {
+    display: flex;
+}
+
+.nav__menu-item:not(:last-child) {
+    margin-right: 48px;
+
+}
+
+.nav__menu-link {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    transition: .5s;
+}
+
+.nav__menu-link:hover {
+    color: #C99E71;
+}
+
+.coffe__main {
+    position: relative;
+}
+
+.coffee__img {
+    margin-bottom: 140px;
+}
+
+.coffe__main-inner {
+    position: absolute;
+    top: 0;
+
+}
+
+.coffe__img-dsr {
+    margin-top: 140px;
+
+}
+
+
+.coffe__title {
+    font-family: "Righteous";
+    color: #FFFFFF;
+    max-width: 600px;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 130%;
+    margin-bottom: 32px;
+
+}
+
+.coffe__dsr {
+    max-width: 515px;
+    color: #FFF;
+    font-family: "Urbanist";
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 180%;
+    text-transform: capitalize;
+    margin-bottom: 64px;
+
+}
+
+.coffe__link {
+    color: #FFF;
+    padding: 24px 40px;
+    background-color: #C99E71;
+    text-transform: uppercase;
+}
+
+.coffe__barista {
+    margin-bottom: 140px;
+}
+
+.coffe__barista-inner {
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barista-card {}
+
+.barista-title {
+    display: flex;
+    margin-bottom: 24px;
+
+
+}
+
+.barista-title-inner {
+    font-family: "Righteous";
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.barista-number {
+    font-family: "Righteous";
+    color: #C99E71;
+    margin-right: 12px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.barista-img {
+    text-align: center;
+}
+
+.coffe__bord {
+    margin-bottom: 140px;
+}
+
+.coffe__bord-inner {
+    display: flex;
+}
+
+.coffe__bord-img {
+    display: grid;
+    grid-template-rows: repeat(2, 300px);
+    grid-template-columns: repeat(2, 300px);
+    align-items: center;
+    justify-items: center;
+    gap: 32px;
+    margin-right: 32px;
+}
+
+
+
+.coffe__bord-card--item-1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.coffe__bord-card--item-2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+}
+
+.coffe__bord-card--item-3 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+
+.coffe__bord-dsr {
+    background-color: #1C1814;
+    padding-left: 56px;
+    padding-right: 56px;
+    padding-top: 120px;
+    max-width: 635px;
+
+}
+
+.coffe__bord-dsr--inner {}
+
+.coffe__bord-dsr--inner-2 {}
+
+.coffe__bord-title {
+    color: #C99E71;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 12px;
+}
+
+.coffe__bord-main__title {
+    font-family: "Righteous";
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 130%;
+    margin-bottom: 35px;
+}
+
+.coffe__bord-text {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 180%;
+    letter-spacing: 0%;
+    max-width: 398px;
+    opacity: 0.8;
+    text-transform: capitalize;
+}
+
+.popular__product-text {
+    color: #C99E71;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 12px;
+}
+
+.popular__product-title {
+    color: #FFF;
+    text-align: center;
+    font-family: "Righteous";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 130%;
+    margin-bottom: 55px;
+}
+
+.coffe__maps {
+    margin-bottom: 140px;
+}
+
+.coffe__bag {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 96px;
+}
+
+.coffe__bag-card-static {
+    text-align: center;
+    max-width: 366px;
+    max-height: 579px;
+}
+
+.coffe__bag-text {
+    color: #FFF;
+    font-family: "Righteous";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.coffe__bag-text-static {
+    margin-bottom: 38px;
+}
+
+.offe__bag-card-static-img {
+    margin-bottom: 36px;
+}
+
+.coffe__bag-dsr {
+    background-color: #C99E71;
+    padding: 13px 23px;
+}
+
+.fa-bag-shopping {
+    color: #FFF;
+}
+
+.coffe__bag-link {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+.coffe__bag-card {
+    text-align: center;
+    max-width: 366px;
+    max-height: 579px;
+}
+
+.coffe__bag-card-img {
+    margin-bottom: 36px;
+}
+
+.coffe__star {
+    margin-bottom: 20px;
+
+}
+
+.stat__text {
+    color: #C99E71;
+    margin-right: 15px;
+}
+
+.coffe__bag-text-star {
+    color: #fff;
+    font-family: "Righteous";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.fa-star {
+    color: #C99E71;
+    cursor: pointer;
+}
+
+.fa-star:not(:last-child) {
+    margin-right: 8px;
+}
+
+.coffe__star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coffe-bag-ptice-text {
+    font-family: "Urbanist";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: #C99E71;
+}
+
+.coffe-link__bag {
+    text-align: center;
+    margin-bottom: 161px;
+}
+
+.coffe-link {
+    color: #fff;
+    padding: 20px 36px;
+    background-color: #C99E71;
+}
+
+.coffe__machine {
+    margin-bottom: 140px;
+}
+
+.coffe__machine-inner {
+    display: flex;
+    background-color: #1C1814;
+    gap: 160px;
+}
+
+.coffe__machine-img {
+    max-width: 226px;
+    max-height: 360px;
+    margin: 85px 0 86px 169px;
+}
+
+.coffe__machine-title {
+    color: #FFF;
+    font-family: "Righteous";
+    font-size: 43px;
+    font-weight: 400;
+    line-height: 130%;
+    max-width: 500px;
+    margin-bottom: 35px;
+}
+
+.coffe__machine-dsr {
+    margin-top: 72px;
+    padding-right: 94px;
+}
+
+.coffe__machine-text {
+    color: #FFF;
+    font-family: "Urbanist";
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 180%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    opacity: 0.8;
+    margin-bottom: 36px;
+    max-width: 521px;
+}
+
+.coffe__machine-link {
+    display: inline-block;
+    background-color: #C99E71;
+    color: #FFF;
+    padding: 20px 36px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 22px;
+}
+
+.menu {
+    margin-bottom: 140px;
+}
+
+.menu__inner {
+    /* text-align: center; */
+}
+
+.name__menu {
+    margin: 0 auto;
+    color: #C99E71;
+    font-family: "Urbanist";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 12px;
+    text-align: center;
+
+}
+
+.menu__title {
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-family: "Righteous";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 130%;
+    margin-bottom: 55px;
+}
+
+.menu__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px 40px;
+}
+
+.menu__list-item {
+    max-width: 565px;
+    padding: 24px;
+    border: 1px solid #32323D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__list-text {
+    color: #FFF;
+    font-family: "Righteous";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.menu__list-img {
+    max-width: 72px;
+    max-height: 72px;
+
+}
+
+.menu__list-price {
+    color: #C99E71;
+    font-family: "Urbanist";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.testimonial {
+    margin-bottom: 158px;
+}
+
+
+.testimonial-inner {}
+
+.testimonial-dsr {
+    text-align: center;
+
+}
+
+.testimonial-text {
+    color: #C99E71;
+    font-family: "Urbanist";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 12px;
+}
+
+.testimonial-title {
+    color: #fff;
+    font-family: "Righteous";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 130%;
+    margin-bottom: 55px;
+}
+
+.swiper-wrapper {
+    margin-bottom: 36px;
+}
+
+.swiper-slide {
+    background-color: #1C1814;
+    padding: 40px;
+}
+
+.swiper-dsr {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 28px;
+}
+
+.swiper-img {
+    max-width: 129px;
+    max-height: 149px;
+}
+
+.swiper-text {
+    color: #FFF;
+    opacity: 0.8;
+    font-family: "Urbanist";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 180%;
+}
+
+.swiper-name {
+    color: #FFF;
+    font-family: "Urbanist";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 4px;
+}
+
+.swiper-job {
+    color: #FFF;
+    opacity: 0.8;
+    font-family: Urbanist;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 180%;
+}
+
+.swiper-star {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.star-gold {
+    color: #FAA61A;
+}
+
+#swiper-color {
+    color: #C99E71;
+    font-family: "Urbanist";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 135%;
+    position: relative;
+    left: -500px;
+    margin-bottom: 23px;
+}
+
+#swiper-color::after {
+    content: " People";
+    font-family: "Urbanist";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 135%;
+}
+
+.coffe__maps-inner {
+    background-color: #1C1814;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+}
+
+.coffe__maps-form {
+    text-align: center;
+}
+
+.coffe__maps-text {
+    color: #C99E71;
+    font-family: "Urbanist";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 12px;
+    margin-top: 72px;
+}
+
+.coffe__maps-title {
+    color: #FFF;
+    font-family: "Righteous";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 60px;
+    margin-bottom: 57px;
+}
+
+.coffe__maps-dsr {
+    color: #FFF;
+    background-color: #14110E;
+    font-family: "Urbanist";
+    opacity: 0.8;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 180%;
+    text-align: start;
+    padding: 16px 0 16px 20px;
+    margin-right: 48px;
+}
+
+.coffe__maps-dsr:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.coffe__maps-nav {
+    width: 565px;
+    height: 652px;
+}
+
+.last__item {
+    margin-bottom: 56px;
+}
+
+.coffe__maps-link {
+    display: inline-block;
+    color: #FFF;
+    padding: 20px 36px;
+    background-color: #C99E71;
+}
+
+
+.coffe__more {
+    margin-bottom: 200px;
+}
+
+.coffe__more-inner {}
+
+.coffe__more-text {
+    color: #C99E71;
+    text-align: center;
+    font-family: "Urbanist";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 12px;
+}
+
+.coffe__more-title {
+    color: #FFF;
+    text-align: center;
+    font-family: "Righteous";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 130%;
+    margin-bottom: 55px;
+
+}
+
+.coffe__more-list {
+    display: flex;
+    text-align: start;
+    justify-content: space-between;
+    gap: 36px;
+
+}
+
+.coffe__more-card-text {
+    color: #FFF;
+    font-family: "Righteous";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.coffe__more-arrow {
+    color: #C99E71;
+    font-family: "Urbanist";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    cursor: pointer;
+}
+
+.arrow {
+    padding-bottom: 24px;
+    padding-left: 24px;
+}
+
+.coffe__more-img {
+    margin-bottom: 30px;
+    width: 366px;
+    height: 360px;
+}
+
+.coffe__more-card-text {
+    margin-bottom: 33px;
+}
+
+.fa-arrow-right {
+    margin-left: 10px;
+    color: #C99E71;
+    cursor: pointer;
+}
+
+.coffe__more-card {
+    background-color: #1C1814;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.footer__img {
+    width: 72px;
+    height: 60px;
+    /* margin-right: 37px; */
+}
+
+.nav__footer {}
+
+.nav__footer-menu {
+    display: flex;
+    gap: 40px;
+}
+
+.nav__footer-link {
+    color: #FFF;
+    font-family: "Urbanist";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.footer__form {
+    display: flex;
+}
+.footer__email{
+    background-color: #1C1814;
+    border: none;
+    outline: none;
+    border-radius: 36px;
+    flex-grow: 1;
+    margin-right: 10px;
+    color: #FFF;
+    padding-left: 20px;
+}
+.footer__email::placeholder {
+    font-family: "Urbanist";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 180%;
+    padding: 21px 28px;
+}
+.fa-footer{
+    color: #FFF;
+}
+.footer__btn{
+    cursor: pointer;
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding-right: 9px;
+    background-color: #C99E71;
+}
